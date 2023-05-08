@@ -1,7 +1,7 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "description": "A text editor that runs in the browser that meets the PWA criteria and will also function offline.",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -12,8 +12,8 @@
     "client": "cd client && npm start"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Diamante710",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4"

@@ -11,7 +11,10 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
+      database: './src/js/database.js',
+      editor: './src/js/editor.js',
+      header: './src/js/header.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -20,7 +23,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'JATE'
       }),
      
       new InjectManifest({
@@ -30,9 +33,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
-        short_name: 'Contact',
-        description: 'Never forget your contacts!',
+        name: 'Just Another Text Editor',
+        short_name: 'JATE',
+        description: 'Text Editor',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
